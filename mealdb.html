@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal DB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body class="bg-gray">
+    <!-- meal search area  -->
+    <h2 class="text-center text-success">Search your favourite food</h2>
+    <div class="input-group mb-3 w-50 mx-auto">
+        <input id="search-field" type="text" class="form-control" placeholder="search the food you want..."
+            aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button onclick="searchFood()" class="btn btn-outline-secondary" id="button-search" type="button"
+            id="button-addon2">Search</button>
+    </div>
+
+    <!-- single meal details  -->
+    <div id="meal-detail" class=" w-25  mx-auto">
+
+    </div>
+
+
+    <!-- meal search result  -->
+    <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4">
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script src="js/mealdbasync.js"></script>
+</body>
+
+</html>
